@@ -44,7 +44,7 @@ const Header = () => {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Navegación principal" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
             <Link 
@@ -112,7 +112,7 @@ const Header = () => {
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
+        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg" aria-label="Menú móvil de navegación">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
   <Link

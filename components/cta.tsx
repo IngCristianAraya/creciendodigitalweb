@@ -31,7 +31,7 @@ const CTA = () => {
   };
 
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section aria-label="Llamado a la acción" className="relative py-16 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 dark:from-blue-800 dark:to-blue-600"></div>
       

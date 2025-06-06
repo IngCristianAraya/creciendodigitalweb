@@ -47,7 +47,7 @@ const About = () => {
 
 
   return (
-    <section id="nosotros" className="py-28 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
+    <section id="nosotros" aria-label="Sobre Nosotros" className="py-28 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
       {/* Fondo cuadrillado y gradiente como en Hero */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 to-white/70 dark:from-gray-900/90 dark:to-gray-800/90" />
@@ -133,7 +133,7 @@ const About = () => {
               <div className="bg-blue-700 dark:bg-blue-400 rounded-full p-5 shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Briefcase className="h-12 w-12 text-white dark:text-blue-900" />
               </div>
-              <CardTitle className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Experiencia práctica</CardTitle>
+              <h3 className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Experiencia práctica</h3>
               <div className="w-8 h-1 rounded-full bg-blue-700 dark:bg-blue-400 mb-4" />
               <CardDescription className="text-gray-600 dark:text-gray-300 text-center">
                 Más que promesas, ofrecemos soluciones construidas desde la experiencia real desarrollando sistemas para negocios como minimarkets, peluquerías, consultorios y más.
@@ -146,7 +146,7 @@ const About = () => {
               <div className="bg-blue-700 dark:bg-blue-400 rounded-full p-5 shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Layout className="h-12 w-12 text-white dark:text-blue-900" />
               </div>
-              <CardTitle className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Desarrollo a medida</CardTitle>
+              <h3 className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Desarrollo a medida</h3>
               <div className="w-8 h-1 rounded-full bg-blue-700 dark:bg-blue-400 mb-4" />
               <CardDescription className="text-gray-600 dark:text-gray-300 text-center">
                 No usamos soluciones genéricas. Creamos plataformas adaptadas al rubro y necesidad de cada cliente, con diseño limpio y funcional.
@@ -159,7 +159,7 @@ const About = () => {
               <div className="bg-blue-700 dark:bg-blue-400 rounded-full p-5 shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Handshake className="h-12 w-12 text-white dark:text-blue-900" />
               </div>
-              <CardTitle className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Enfoque humano y cercano</CardTitle>
+              <h3 className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Enfoque humano y cercano</h3>
               <div className="w-8 h-1 rounded-full bg-blue-700 dark:bg-blue-400 mb-4" />
               <CardDescription className="text-gray-600 dark:text-gray-300 text-center">
                 Nos involucramos contigo. No eres un número, sino un aliado que queremos ver crecer.
@@ -172,7 +172,7 @@ const About = () => {
               <div className="bg-blue-700 dark:bg-blue-400 rounded-full p-5 shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Rocket className="h-12 w-12 text-white dark:text-blue-900" />
               </div>
-              <CardTitle className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Tecnología lista para escalar</CardTitle>
+              <h3 className="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Tecnología lista para escalar</h3>
               <div className="w-8 h-1 rounded-full bg-blue-700 dark:bg-blue-400 mb-4" />
               <CardDescription className="text-gray-600 dark:text-gray-300 text-center">
                 Usamos herramientas modernas como React, Next.js y Node.js para que tu negocio esté preparado para lo que viene.

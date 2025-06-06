@@ -1,6 +1,14 @@
+import Head from 'next/head';
+
 export default function PoliticaPrivacidadPage() {
   return (
-    <div className="min-h-[60vh] bg-gray-50 dark:bg-gray-900 py-10 px-4">
+    <>
+      <Head>
+        <title>Política de Privacidad | Creciendo Digital</title>
+        <meta name="description" content="Conoce cómo Creciendo Digital protege tu privacidad y gestiona tus datos personales al usar nuestros servicios digitales." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <div className="min-h-[60vh] bg-gray-50 dark:bg-gray-900 py-10 px-4">
       <div className="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mt-24">
         <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-6">Política de Privacidad</h1>
         <p className="mb-5">En Creciendo Digital valoramos y protegemos tu privacidad. Esta política explica cómo recopilamos, usamos y protegemos tu información personal al utilizar nuestro sitio web y servicios.</p>
@@ -26,5 +34,6 @@ export default function PoliticaPrivacidadPage() {
         <p className="mt-10 text-sm text-gray-500">Última actualización: 5 de junio de 2025</p>
       </div>
     </div>
+    </>
   );
 }

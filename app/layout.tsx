@@ -7,6 +7,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import FloatingWhatsappButton from "@/components/FloatingWhatsappButton";
+import './skip-link.css';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +24,46 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        {/* SEO básico y Social Media global (puedes sobrescribir en cada página) */}
+        <link rel="canonical" href="https://creciendodigital.pe/" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_PE" />
+        <meta property="og:title" content="Creciendo Digital | Servicios Digitales Profesionales" />
+        <meta property="og:description" content="Ofrecemos servicios de diseño web, sistemas SaaS, marketing digital y asesorías para ayudar a tu negocio a crecer en el mundo digital." />
+        <meta property="og:url" content="https://creciendodigital.pe/" />
+        <meta property="og:site_name" content="Creciendo Digital" />
+        <meta property="og:image" content="https://creciendodigital.pe/og-image.jpg" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Creciendo Digital | Servicios Digitales Profesionales" />
+        <meta name="twitter:description" content="Ofrecemos servicios de diseño web, sistemas SaaS, marketing digital y asesorías para ayudar a tu negocio a crecer en el mundo digital." />
+        <meta name="twitter:image" content="https://creciendodigital.pe/og-image.jpg" />
+        <meta name="twitter:site" content="@creciendodigital" />
+        {/* Puedes personalizar estas etiquetas dinámicamente en cada página usando el componente Head de Next.js */}
+      </head>
       <body className={inter.className}>
+        {/* Google Analytics (GA4): reemplaza NEXT_PUBLIC_GA_ID en .env.local con tu ID real */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+
+        {/* Skip link accesible para navegación por teclado */}
+        <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
         <CustomCursor />
         <ThemeProvider
           attribute="class"
@@ -31,7 +72,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main id="main-content" className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
         <FloatingWhatsappButton />

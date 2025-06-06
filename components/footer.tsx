@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Globe } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,7 +40,7 @@ const Footer = () => {
       },
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://www.instagram.com/creciendodigital.tv',
         icon: (props: any) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -79,13 +79,20 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 text-white mb-6">
-              <Globe className="h-8 w-8 text-blue-400" />
+              <Image
+                src="/logo.png"
+                alt="Creciendo Digital Logo"
+                width={32}
+                height={32}
+                className="h-8 w-8 object-contain"
+                priority
+              />
               <span className="font-bold text-xl">Creciendo Digital</span>
             </div>
             <p className="text-gray-400 mb-6">
               Transformamos ideas en soluciones digitales exitosas que impulsan el crecimiento de tu negocio.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4" aria-label="Redes sociales">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
