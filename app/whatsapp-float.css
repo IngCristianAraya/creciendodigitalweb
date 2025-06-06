@@ -1,0 +1,7 @@
+.whatsapp-float-anim {
+  transition: transform 0.8s cubic-bezier(.4,1,.2,1);
+  will-change: transform;
+}
+.whatsapp-float-anim:hover {
+  transform: rotateY(360deg) scale(1.05);
+}
