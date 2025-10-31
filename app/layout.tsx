@@ -13,8 +13,8 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Creciendo Digital | Servicios Digitales Profesionales',
-  description: 'Ofrecemos servicios de diseño web, sistemas SaaS, marketing digital y asesorías para ayudar a tu negocio a crecer en el mundo digital.',
+  title: 'Presencia Digital Express — Creciendo Digital',
+  description: '¿Tu negocio solo está en WhatsApp? Dale presencia profesional con una página simple, rápida y económica. Listo en 72 horas — desde 149 soles.',
 };
 
 export default function RootLayout({
@@ -32,15 +32,15 @@ export default function RootLayout({
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_PE" />
-        <meta property="og:title" content="Creciendo Digital | Servicios Digitales Profesionales" />
-        <meta property="og:description" content="Ofrecemos servicios de diseño web, sistemas SaaS, marketing digital y asesorías para ayudar a tu negocio a crecer en el mundo digital." />
+        <meta property="og:title" content="Presencia Digital Express — Creciendo Digital" />
+        <meta property="og:description" content="¿Tu negocio solo está en WhatsApp? Página simple, rápida y económica. Listo en 72 horas — desde 149 soles." />
         <meta property="og:url" content="https://creciendodigital.pe/" />
         <meta property="og:site_name" content="Creciendo Digital" />
         <meta property="og:image" content="https://creciendodigital.pe/og-image.jpg" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Creciendo Digital | Servicios Digitales Profesionales" />
-        <meta name="twitter:description" content="Ofrecemos servicios de diseño web, sistemas SaaS, marketing digital y asesorías para ayudar a tu negocio a crecer en el mundo digital." />
+        <meta name="twitter:title" content="Presencia Digital Express — Creciendo Digital" />
+        <meta name="twitter:description" content="¿Tu negocio solo está en WhatsApp? Página simple, rápida y económica. Listo en 72 horas — desde 149 soles." />
         <meta name="twitter:image" content="https://creciendodigital.pe/og-image.jpg" />
         <meta name="twitter:site" content="@creciendodigital" />
         {/* Puedes personalizar estas etiquetas dinámicamente en cada página usando el componente Head de Next.js */}

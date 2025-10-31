@@ -7,17 +7,10 @@ const Footer = () => {
   const navigation = {
     main: [
       { name: 'Inicio', href: '#' },
-      { name: 'Servicios', href: '#servicios' },
-      { name: 'Nosotros', href: '#nosotros' },
-      { name: 'Proceso', href: '#proceso' },
-      { name: 'Testimonios', href: '#testimonios' },
+      { name: '¿Qué incluye?', href: '#servicios' },
+      { name: 'Ejemplos', href: '#ejemplos' },
+      { name: 'Sobre mí', href: '#sobre-mi' },
       { name: 'Contacto', href: '#contacto' },
-    ],
-    services: [
-      { name: 'Diseño Web', href: 'https://creciendodigital.disenowebCD.com' },
-      { name: 'Sistemas SaaS', href: 'https://creciendodigital.saasCD.com' },
-      { name: 'Marketing Digital', href: 'https://creciendodigital.marketingCD.com' },
-      { name: 'Asesorías', href: 'https://creciendodigital.asesoriasCD.com' },
     ],
     legal: [
       { name: 'Términos y condiciones', href: '/terminos-y-condiciones' },
@@ -40,7 +33,7 @@ const Footer = () => {
       },
       {
         name: 'Instagram',
-        href: 'https://www.instagram.com/creciendodigital.tv',
+        href: 'https://www.instagram.com/creciendo.digital',
         icon: (props: any) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -90,7 +83,7 @@ const Footer = () => {
               <span className="font-bold text-xl">Creciendo Digital</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Transformamos ideas en soluciones digitales exitosas que impulsan el crecimiento de tu negocio.
+              Tecnología accesible para pequeños negocios reales. Páginas simples, rápidas y económicas.
             </p>
             <div className="flex space-x-4" aria-label="Redes sociales">
               {navigation.social.map((item) => (
@@ -103,6 +96,11 @@ const Footer = () => {
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
+            </div>
+            <div className="mt-4">
+              <a href="https://www.instagram.com/creciendo.digital" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                Síguenos en @creciendo.digital
+              </a>
             </div>
           </div>
           
@@ -123,21 +121,10 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Services */}
+          {/* Spacer or additional info */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-6">Servicios</h3>
-            <ul className="space-y-3">
-              {navigation.services.map((item) => (
-                <li key={item.name}>
-                  <Link 
-                    href={item.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <h3 className="text-lg font-semibold mb-6">Presencia Digital Express</h3>
+            <p className="text-gray-400">Listo en 72 horas — desde 149 soles.</p>
           </div>
           
           {/* Legal */}
@@ -161,11 +148,8 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-gray-400 text-sm">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>© {currentYear} Creciendo Digital. Todos los derechos reservados.</p>
-            <p className="mt-4 md:mt-0">
-              Diseñado y desarrollado con ❤️ por Creciendo Digital
-            </p>
+          <div className="flex justify-center items-center">
+            <p className="text-center w-full"> {currentYear} Creciendo Digital. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

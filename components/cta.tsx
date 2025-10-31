@@ -52,26 +52,20 @@ const CTA = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              ¿Listo para transformar tu negocio?
+              ¿Listo para que más clientes te encuentren?
             </h2>
             <p className="mt-6 text-xl text-blue-100">
-              Contáctanos hoy mismo y descubre cómo podemos ayudarte a potenciar tu presencia digital y alcanzar tus objetivos de negocio.
+              Escríbeme por WhatsApp y en 24 horas ya tienes tu boceto.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                className="bg-white text-blue-700 hover:bg-blue-50 text-lg px-8 py-6"
-                size="lg"
-              >
-                Solicitar una consulta gratuita
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/20 text-lg px-8 py-6"
-                size="lg"
-              >
-                Ver nuestro portafolio
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+            <div className="mt-10 flex justify-center">
+              <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  className="bg-white text-blue-700 hover:bg-blue-50 text-lg px-8 py-6"
+                  size="lg"
+                >
+                  Escríbeme ahora
+                </Button>
+              </a>
             </div>
           </div>
         </motion.div>

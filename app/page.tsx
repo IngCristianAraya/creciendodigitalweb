@@ -1,8 +1,7 @@
 import Hero from '@/components/hero';
 import Services from '@/components/services';
+import Examples from '@/components/examples';
 import About from '@/components/about';
-import Testimonials from '@/components/testimonials';
-import Process from '@/components/process';
 import Contact from '@/components/contact';
 import CTA from '@/components/cta';
 
@@ -12,15 +11,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Creciendo Digital | Soluciones Digitales para tu Negocio</title>
-        <meta name="description" content="Transformamos ideas en soluciones digitales: diseño web, SaaS, marketing y asesoría para empresas y emprendedores." />
+        <title>Presencia Digital Express — Creciendo Digital</title>
+        <meta name="description" content="¿Tu negocio solo está en WhatsApp? Dale presencia profesional con una página simple, rápida y económica. Listo en 72 horas — desde 149 soles." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero />
       <Services />
+      <Examples />
       <About />
-      <Process />
-      <Testimonials />
       <CTA />
       <Contact />
     </>

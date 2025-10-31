@@ -28,10 +28,9 @@ const Header = () => {
 
   const navigation = [
     { name: 'Inicio', href: '#' },
-    { name: 'Servicios', href: '#servicios' },
-    { name: 'Nosotros', href: '#nosotros' },
-    { name: 'Proceso', href: '#proceso' },
-    { name: 'Testimonios', href: '#testimonios' },
+    { name: '¿Qué incluye?', href: '#servicios' },
+    { name: 'Ejemplos', href: '#ejemplos' },
+    { name: 'Sobre mí', href: '#sobre-mi' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
@@ -77,14 +76,14 @@ const Header = () => {
           </div>
           
           <div className="hidden md:block">
-            <a href="#contacto">
-  <Button 
-    className="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
-  >
-    <Mail className="w-5 h-5" />
-    Solicitar Consulta
-  </Button>
-</a>
+            <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
+              >
+                <Mail className="w-5 h-5" />
+                Escríbeme por WhatsApp
+              </Button>
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -126,14 +125,14 @@ const Header = () => {
   </Link>
 ))}
             <div className="pt-4 pb-3">
-              <a href="#contacto">
-  <Button 
-    className="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
-  >
-    <Mail className="w-5 h-5" />
-    Solicitar Consulta
-  </Button>
-</a>
+              <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  className="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
+                >
+                  <Mail className="w-5 h-5" />
+                  Escríbeme por WhatsApp
+                </Button>
+              </a>
             </div>
           </div>
         </div>
