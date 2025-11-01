@@ -4,7 +4,7 @@ import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+// Iconos reemplazados por flechas de texto para alinearse al estilo del sitio
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -206,7 +206,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'absolute  h-8 w-8 rounded-full',
+        'absolute h-9 w-9 rounded-full border border-blue-700 text-blue-700 bg-white/90 hover:bg-blue-50 dark:border-blue-500 dark:text-blue-400 dark:bg-gray-900/80 dark:hover:bg-blue-900/20 shadow-sm transition-transform active:scale-95 disabled:opacity-40',
         orientation === 'horizontal'
           ? '-left-12 top-1/2 -translate-y-1/2'
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -214,9 +214,10 @@ const CarouselPrevious = React.forwardRef<
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
+      aria-label="Anterior"
       {...props}
     >
-      <ArrowLeft className="h-4 w-4" />
+      <span className="font-bold text-lg leading-none">{"<"}</span>
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -235,7 +236,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'absolute h-8 w-8 rounded-full',
+        'absolute h-9 w-9 rounded-full border border-blue-700 text-blue-700 bg-white/90 hover:bg-blue-50 dark:border-blue-500 dark:text-blue-400 dark:bg-gray-900/80 dark:hover:bg-blue-900/20 shadow-sm transition-transform active:scale-95 disabled:opacity-40',
         orientation === 'horizontal'
           ? '-right-12 top-1/2 -translate-y-1/2'
           : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -243,9 +244,10 @@ const CarouselNext = React.forwardRef<
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
+      aria-label="Siguiente"
       {...props}
     >
-      <ArrowRight className="h-4 w-4" />
+      <span className="font-bold text-lg leading-none">{">"}</span>
       <span className="sr-only">Next slide</span>
     </Button>
   );

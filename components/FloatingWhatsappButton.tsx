@@ -5,7 +5,7 @@ import "../app/whatsapp-float.css";
 export default function FloatingWhatsappButton() {
   return (
     <a
-      href="https://wa.me/51906684284"
+      href="https://wa.me/51901426737?text=Quiero%20mi%20web%20desde%20149%20soles&utm_source=website&utm_medium=floating_button&utm_campaign=landing_149"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp"

@@ -6,7 +6,6 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import FloatingWhatsappButton from "@/components/FloatingWhatsappButton";
 import './skip-link.css';
 import Script from 'next/script';
 
@@ -75,7 +74,7 @@ export default function RootLayout({
           <main id="main-content" className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
-        <FloatingWhatsappButton />
+        {/* Botón flotante removido para dejar solo CTA en header y final */}
       </body>
     </html>
   );

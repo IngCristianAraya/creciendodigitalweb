@@ -58,7 +58,7 @@ const CTA = () => {
               Escríbeme por WhatsApp y en 24 horas ya tienes tu boceto.
             </p>
             <div className="mt-10 flex justify-center">
-              <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/51901426737?text=Quiero%20mi%20web%20desde%20149%20soles&utm_source=website&utm_medium=cta_section&utm_campaign=landing_149" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="bg-white text-blue-700 hover:bg-blue-50 text-lg px-8 py-6"
                   size="lg"

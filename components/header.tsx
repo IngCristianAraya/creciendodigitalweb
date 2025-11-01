@@ -30,8 +30,7 @@ const Header = () => {
     { name: 'Inicio', href: '#' },
     { name: '¿Qué incluye?', href: '#servicios' },
     { name: 'Ejemplos', href: '#ejemplos' },
-    { name: 'Sobre mí', href: '#sobre-mi' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: 'Servicios', href: '#servicios-ofrecidos' },
   ];
 
   return (
@@ -76,7 +75,7 @@ const Header = () => {
           </div>
           
           <div className="hidden md:block">
-            <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/51901426737?text=Quiero%20mi%20web%20desde%20149%20soles&utm_source=website&utm_medium=header_button&utm_campaign=landing_149" target="_blank" rel="noopener noreferrer">
               <Button 
                 className="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
               >
@@ -125,7 +124,7 @@ const Header = () => {
   </Link>
 ))}
             <div className="pt-4 pb-3">
-              <a href="https://wa.me/51906684284" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/51901426737?text=Quiero%20mi%20web%20desde%20149%20soles&utm_source=website&utm_medium=mobile_header_button&utm_campaign=landing_149" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 flex items-center gap-2"
                 >

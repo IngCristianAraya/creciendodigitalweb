@@ -9,8 +9,7 @@ const Footer = () => {
       { name: 'Inicio', href: '#' },
       { name: '¿Qué incluye?', href: '#servicios' },
       { name: 'Ejemplos', href: '#ejemplos' },
-      { name: 'Sobre mí', href: '#sobre-mi' },
-      { name: 'Contacto', href: '#contacto' },
+      { name: 'Servicios', href: '#servicios-ofrecidos' },
     ],
     legal: [
       { name: 'Términos y condiciones', href: '/terminos-y-condiciones' },

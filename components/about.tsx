@@ -8,7 +8,8 @@ const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="sobre-mi" aria-label="Sobre mí" className="py-28 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
+    <section id="sobre-mi" aria-label="Sobre mí" className="py-28 relative overflow-hidden">
+      {/* Fondo con gradiente y patrón cuadriculado con máscara */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 to-white/70 dark:from-gray-900/90 dark:to-gray-800/90" />
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center opacity-90 dark:opacity-40" style={{ maskImage: 'linear-gradient(180deg,white,rgba(255,255,255,0))' }} />
